@@ -1,0 +1,212 @@
+body{
+  background-color: rgb(0, 48, 73);
+}
+
+@media (max-width: 500px) {
+  .new-game-button{
+    width: 300px;
+    font-size: 25px;
+    height: 60px;
+  }
+  .logo{
+    width: 350px;
+  }
+  .scores{
+    width: 250px;
+  }
+  .game-arena{
+    width: 450px;
+    height: 450px;
+  }
+  .results{
+    width: 450px;
+    height: 180px;
+  }
+}
+@media (min-width: 501px) and (max-width: 700px) {
+  .new-game-button{
+    width: 350px;
+    font-size: 30px;
+    height: 70px;
+  }
+  .logo{
+    width: 400px;
+  }
+  .scores{
+    width: 300px;
+  }
+  .game-arena{
+    width: 480px;
+    height: 480px;
+  }
+  .results{
+    width: 500px;
+    height: 200px;
+  }
+}
+@media (min-width: 701px) and (max-width: 900px) {
+  .new-game-button{
+    width: 450px;
+    font-size: 35px;
+    height: 80px;
+  }
+  .logo{
+    width: 450px;
+  }
+  .scores{
+    width: 350px;
+  }
+  .game-arena{
+    width: 520px;
+    height: 520px;
+  }
+  .results{
+    width: 550px;
+    height: 220px;
+  }
+}
+@media (min-width: 901px) {
+  .new-game-button{
+    width: 500px;
+    font-size: 40px;
+    height: 90px;
+  }
+  .logo{
+    width: 500px;
+  }
+  .scores{
+    width: 400px;
+  }
+  .game-arena{
+    width: 560px;
+    height: 560px;
+  }
+  .results{
+    width: 600px;
+    height: 240px;
+  }
+}
+
+.game-name, .button-container {
+  margin-top: 50px;
+  position: relative;
+  right: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.new-game-button{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 0;
+  background-color: rgb(50, 159, 91);
+  border-radius: 50px;
+  border-color: rgb(50, 159, 91);
+  cursor: pointer;
+  color: white;
+}
+
+.new-game-button:hover{
+  background-color: white;
+  color: rgb(50, 159, 91);
+}
+
+.new-game-button:active{
+  opacity: 0.7;
+}
+
+.score-container, .game-container{
+  margin-top: 30px;
+  position: relative;
+  right: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scores{
+  background-color: white;
+  height: 80px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.score-icon{
+  width: 50px;
+  height: 50px;
+}
+.score{
+  font-size: 50px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.game-arena{
+  background-color: rgb(1, 40, 60);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 10px;
+}
+
+.field{
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 40px;
+  margin: 4px;
+  border: none;
+  position: relative;
+}
+.active-field{
+  cursor: pointer;
+}
+
+.current-player{
+  background-color: rgb(255, 219, 219);
+  border-radius: 12px;
+}
+
+.move-icon{
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 99%;
+  height: 99%;
+  object-fit: contain;
+}
+.game-container{
+  position: relative;
+}
+.result-container{
+  background-color: rgba(255, 255, 255, 0.4);
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 70px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.results{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+  background-color: white;
+  padding: 20px;
+}
+
+.result-icon{
+  width: 70px;
+  height: 70px;
+}
+
+.score-container{
+  z-index: 100;
+}
